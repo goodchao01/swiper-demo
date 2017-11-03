@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,ul,li,form,input{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;	
+}
+input{
+	outline:none;
+	border:none;	
+}
+ul,li {
+	list-style: none;
+}
+.pop-up{
+	position: absolute;
+	margin-left: -250px;
+	left: 50%;
+	margin-top: -300px;
+	top: 50%;
+	width:500px;
+	height:600px;
+	border:1px solid #CCC;
+	padding-top:50px;
+}
+.pop-up input{
+	margin-left:75px;	
+}
+.pop-up .log-style{
+	width:250px;
+	height:50px;
+	background:#0F0;
+	padding:5px 5px 5px 5px;
+	margin-bottom:10px;
+	box-shadow:inset 1px 1px 5px white;
+	margin-left:75px;
+	border-radius:5px;
+}
+.pop-up .log-style li{
+	float:left;
+	width:120px;
+	height:40px;
+	line-height:40px;
+	cursor:pointer;
+	font-family:'微软雅黑';
+	border-radius:5px;
+	text-align:center;
+}
+.log-style .email-log{
+	color:white;	
+}
+.log-style .active3{
+	background:white;
+	box-shadow:-2px 2px 5px #666666;
+}
+.pop-up input{
+	width:250px;
+	height:45px;
+	font-size:13px;
+	margin-top:20px;
+	border:1px solid #ccc;
+	border-radius:5px;
+	padding-left:15px;
+}
+.pop-up span{
+	color:red;
+	font-size:14px;	
+}
+.pop-up .code{
+	 font-family:Arial;
+	 font-style:italic;
+	 color:blue;
+	 font-size:26px;
+	 border:0;
+	 margin-top:10px;
+	 margin-left:75px;
+	 padding:2px 3px;
+	 letter-spacing:3px;
+	 font-weight:bolder;
+	 float:left;
+	 cursor:pointer;
+	 width:150px;
+	 height:40px;
+	 line-height:40px;
+	 text-align:center;
+}
+.pop-up .change{
+	display:block;
+	margin-top:30px;
+	text-decoration:none;
+ 	font-size:12px;
+ 	color:#288bc4;
+}
+.pop-up .submit{
+	background:#03F;
+	border:1px solid #30F;
+	font-size:16px;
+	color:white;
+	font-family:'微软雅黑';
+	cursor:pointer;	
+}
+.email-form{
+display:none;
+}

@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*关于我们*/
+.image{
+	height:400px;
+	overflow:hidden;	
+}
+.image img{
+	width:1078px;
+	height:400px;	
+}
+.title-about{
+	height:90px;
+	background:white;
+	padding-bottom:30px;
+}
+.title-about li{
+	width:280px;
+	height:50px;
+	border:1px solid #999;
+	border-radius:30px;
+	float:left;
+	margin:20px 60px 20px 30px;
+	font-size:20px;
+	font-family:'微软雅黑' Arial;
+	text-align:center;
+	line-height:50px;
+}
+.title-about li a{
+	display:block;
+	width:280px;
+	border-radius:30px;
+	height:50px;
+	color:black;	
+}
+.title-about .hor{
+	margin-right:0;	
+}
+.title-about li:hover{
+	background:#d93d6b;	
+}
+.title-about li a:hover
+{
+	color:white;	
+}
+.title-about li a.active4{
+	background:#d93d6b;
+}
+.aboutus-content {
+	border:1px solid #ccc;
+	background:white;
+	padding-bottom:30px;
+}
+.aboutus-content h3{
+	width:1078px;
+	height:40px;
+	line-height:40px;
+	margin-top:30px;
+	padding-left:30px;
+	background:linear-gradient(#CCC,#666);
+	font-size:16px;
+}
+.-content-{
+	margin:30px;	
+}
+.aboutus-content p{
+	background:white;
+	text-indent:50px;
+	line-height:30px;
+}
+
+
+
+
+
+
+

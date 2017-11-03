@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link type="text/css" rel="stylesheet" href="style/page-common.css">
+<link type="text/css" rel="stylesheet" href="style/common.css">
+<link type="text/css" rel="stylesheet" href="style/product.css">
+<script src="js/perfect move.js"></script>
+<script src="js/contact-pop.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/dropdown-jquery.js"></script>
+<script src="js/product.js"></script>
+</head>
+
+<body>
+<!--头部-->
+<div class="head common">
+  <div class="web-name">
+    <h1>网站名称</h1>
+    <h3>网站英文名称</h3>
+  </div>
+  <ul>
+    <li><a href="index.html">首页</a></li>
+    <li id="contact-us"><a href="javascript:">联系我们</a></li>
+    <li class="logup"><a href="logup.html">注册</a></li>
+  </ul>
+  <div class="contact-pop"  id="contact-pop">
+  		<p class="close-btn" id="close-btn">︽</p>
+        <h2>XXXX科技有限公司</h2>
+        <p>地址：山东省济南市</p>
+        <p>电话：0531-12345678</p>
+        <p>E-mail:comeon@126.com</p>
+        <p>网址：http://www.baidu.com/</p>
+   </div>
+</div>
+<!--导航-->
+<div class="nav common">
+  <ul class="nav-title">
+      <li style="z-index:100"><a href="index.html">首页</a></li>
+      <li style="z-index:90"><a navdrop="drop-about" href="about-us.html">关于我们</a></li>
+      <li class="active" style="z-index:80"><a class="active" navdrop="drop-product" href="product.html">产品介绍</a></li>
+      <li style="z-index:70"><a navdrop="drop-service" href="service.html">技术服务</a></li>
+  </ul>
+  <ul class="nav-icon"> 
+      <li><img src="img/nav/tri.png"></li>
+      <li><img src="img/nav/tri.png"></li>
+      <li><img src="img/nav/tri.png"></li>
+      <li><img src="img/nav/tri.png"></li>
+  </ul>
+  <div class="login">
+    <input class="login-input" type="text" placeholder="用户名">
+	<input class="login-input" type="password" placeholder="密码">
+	<input class="login-btn" type="button" value="登录">
+  </div>
+</div>
+<!--下拉菜单-->
+<div class="dropdown-content common" navdrop="drop-about" id="drop-about">
+  <dl class="dropdown-content1">
+    <dt><a href="about-us.html">公司简介</a></dt>
+    <dd><a href="about-us.html">公司目前发展状况</a></dd>
+    <dd><a href="about-us.html">公司未来发展前景</a></dd>
+    <dd><a href="about-us.html">未来发展规划</a></dd>
+  </dl>
+  <dl>
+    <dt><a href="company-culture.html">公司文化</a></dt>
+    <dd><a href="company-culture.html">核心理念</a></dd>
+    <dd><a href="company-culture.html">销售理念</a></dd>
+    <dd><a href="company-culture.html">工作理念</a></dd>
+    <dd><a href="company-culture.html">用人理念</a></dd>
+  </dl>
+  <dl>
+    <dt><a href="company-hor.html">荣誉资质</a></dt>
+    <dd><a href="company-hor.html">获得荣誉奖项</a></dd>
+    <dd><a href="company-hor.html">公司资质</a></dd>
+  </dl>
+</div>
+<div class="common dropdown-content" navdrop="drop-product" id="drop-product">
+  <dl>
+    <dt><a href="product.html">通信软件</a></dt>
+    <dd><a href="product.html">电脑端应用</a></dd>
+    <dd><a href="product.html">移动端应用</a></dd>
+  </dl> 
+  <dl>
+    <dt><a href="pro-number.html">数码设备</a></dt>
+    <dd><a href="pro-number.html">数码相机</a></dd>
+    <dd><a href="pro-number.html">摄像机</a></dd>
+    <dd><a href="pro-number.html">数控家电</a></dd>
+  </dl>
+  <dl>
+    <dt><a href="pro-computer.html">电脑设备</a></dt>
+    <dd><a href="pro-computer.html">台式机</a></dd>
+    <dd><a href="pro-computer.html">笔记本</a></dd>
+    <dd><a href="pro-computer.html">平板</a></dd>
+  </dl>
+</div>
+<div class="common dropdown-content drop-content3" navdrop="drop-service" id="drop-service">
+  <dl>
+    <dt><a href="service.html">交流平台</a></dt>
+  </dl>
+  <dl>
+    <dt><a href="ser-dowload">下载中心</a></dt>
+  </dl>
+  <dl>
+    <dt><a href="ser-excellent">佳作汇编</a></dt>
+  </dl>
+</div>
+
+<!--图片-->
+<div class="image common">
+    <img src="img/carou/picture4.png">
+</div>
+<!--标题-->
+<ul class="title-about common">
+<li ><a class="active4" style="color:white" href="product.html">通信软件>></a></li>
+<li><a href="pro-number.html">数码设备>></a></li>
+<li class="hor"><a href="pro-computer.html">电脑设备>></a></li>
+</ul>
+<!--公司简介内容-->
+<div class="product-content common" id="product-content">
+    <h3>电脑端应用</h3>
+    <h3 class="mobil">移动端应用</h3>
+    <div class="product-btn">
+      <ul id="productbtn">
+        <li class="active4">电脑端应用</li>
+        <li>移动端应用</li>
+      </ul>
+    </div>
+    <ul id="-content-">
+      <li class="-content1-">
+      
+      </li>
+      <li class="-content2-">
+      
+      </li>
+    </ul>
+</div>
+<!--页脚-->
+<div class="foot common">
+  <div class="center-content">
+    <ul>
+  	  <li><a href="index.html">首页</a></li>
+      <li><a href="about-us.html">关于我们</a></li>
+      <li><a href="product.html">产品介绍</a></li>
+      <li><a href="service.html">技术服务</a></li>
+      <li class="contact-us"><a href="contact-us.html">联系我们</a></li>
+    </ul>
+    <p>Copyright@Website Name.All Right Reserved</p>
+  </div>
+</div>
+</body>
+</html>

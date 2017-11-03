@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="style/style.css">
+<link type="text/css" rel="stylesheet" href="style/common.css">
+<script src="js/perfect move.js"></script>
+<script src="js/contact-pop.js"></script>
+<script src="js/javascript.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/dropdown-jquery.js"></script>
+<script>
+  $(document).ready(function(){
+    $.get("http://www.runoob.com/try/ajax/demo_test.php?callback=?",function(data,status){
+      console.log("数据: " + data + "\n状态: " + status);
+    });
+  }); 
+</script>
+</head>
+
+<body>
+<!--头部-->
+<div class="head common">
+  <div class="web-name">
+    <h1>网站名称</h1>
+    <h3>网站英文名称</h3>
+  </div>
+  <ul>
+    <li><a href="index.html">首页</a></li>
+    <li id="contact-us"><a href="javascript:">联系我们</a></li>
+    <li class="logup"><a href="logup.html">注册</a></li>
+  </ul>
+  <div class="contact-pop"  id="contact-pop">
+  		<p class="close-btn" id="close-btn">︽</p>
+        <h2>XXXX科技有限公司</h2>
+        <p>地址：山东省济南市</p>
+        <p>电话：0531-12345678</p>
+        <p>E-mail:comeon@126.com</p>
+        <p>网址：http://www.baidu.com/</p>
+   </div>
+</div>
+<!--导航-->
+<div class="nav common">
+  <ul class="nav-title">
+      <li class="active" style="z-index:100"><a class="active" href="index.html">首页</a></li>
+      <li style="z-index:90"><a navdrop="drop-about" href="about-us.html">关于我们</a></li>
+      <li  style="z-index:80"><a navdrop="drop-product" href="product.html">产品介绍</a></li>
+      <li style="z-index:70"><a navdrop="drop-service" href="service.html">技术服务</a></li>
+  </ul>
+  <ul class="nav-icon"> 
+      <li><img src="img/nav/tri.png"></li>
+      <li><img src="img/nav/tri.png"></li>
+      <li><img src="img/nav/tri.png"></li>
+      <li><img src="img/nav/tri.png"></li>
+  </ul>
+  <div class="login">
+    <input class="login-input" type="text" placeholder="用户名">
+	<input class="login-input" type="password" placeholder="密码">
+	<input class="login-btn" type="button" value="登录">
+  </div>
+</div>
+<!--下拉菜单-->
+<div class="dropdown-content common" navdrop="drop-about" id="drop-about">
+  <dl class="dropdown-content1">
+    <dt><a href="about-us.html">公司简介</a></dt>
+    <dd><a href="about-us.html">公司目前发展状况</a></dd>
+    <dd><a href="about-us.html">公司未来发展前景</a></dd>
+    <dd><a href="about-us.html">未来发展规划</a></dd>
+  </dl>
+  <dl>
+    <dt><a href="company-culture.html">公司文化</a></dt>
+    <dd><a href="company-culture.html">核心理念</a></dd>
+    <dd><a href="company-culture.html">销售理念</a></dd>
+    <dd><a href="company-culture.html">工作理念</a></dd>
+    <dd><a href="company-culture.html">用人理念</a></dd>
+  </dl>
+  <dl>
+    <dt><a href="company-hor.html">荣誉资质</a></dt>
+    <dd><a href="company-hor.html">获得荣誉奖项</a></dd>
+    <dd><a href="company-hor.html">公司资质</a></dd>
+  </dl>
+</div>
+<div class="common dropdown-content" navdrop="drop-product" id="drop-product">
+  <dl>
+    <dt><a href="product.html">通信软件</a></dt>
+    <dd><a href="product.html">电脑端应用</a></dd>
+    <dd><a href="product.html">移动端应用</a></dd>
+  </dl> 
+  <dl>
+    <dt><a href="pro-number.html">数码设备</a></dt>
+    <dd><a href="pro-number.html">数码相机</a></dd>
+    <dd><a href="pro-number.html">摄像机</a></dd>
+    <dd><a href="pro-number.html">数控家电</a></dd>
+  </dl>
+  <dl>
+    <dt><a href="pro-computer.html">电脑设备</a></dt>
+    <dd><a href="pro-computer.html">台式机</a></dd>
+    <dd><a href="pro-computer.html">笔记本</a></dd>
+    <dd><a href="pro-computer.html">平板</a></dd>
+  </dl>
+</div>
+<div class="common dropdown-content drop-content3" navdrop="drop-service" id="drop-service">
+  <dl>
+    <dt><a href="service.html">交流平台</a></dt>
+  </dl>
+  <dl>
+    <dt><a href="javascript:">下载中心</a></dt>
+  </dl>
+  <dl>
+    <dt><a href="javascript:">佳作汇编</a></dt>
+  </dl>
+</div>
+
+<!--轮播-->
+<div class="carou common" id="carou">
+  <ul class="carou-pic" id="carou-pic">
+    <li><img src="img/carou/computer.png">
+      <div>
+        <h3>AIERXUAN X6</h3>
+        <p>英特尔2合1结合了强大与灵活性，同时具有超低功耗，是您创造完美方案的武器。</p>
+      </div>
+      <a class="readmore" href="product.html"><span>阅读更多</span></a>
+    </li>
+    <li><img src="img/carou/computer001.png">
+      <div>
+        <h3>AIERXUAN T81</h3>
+        <p>17.3英寸超大屏，结合了强大与灵活性，同时具有超低功耗，是您创造完美方案的武器。</p>
+      </div>
+      <a class="readmore" href="product.html"><span>阅读更多</span></a>
+    </li>
+    <li><img src="img/carou/camera02.png">
+      <div>
+        <h3>5D MarkIII</h3>
+        <p>佳能数码单反相机，微型可换镜数码相机，带你引领摄影前沿。</p>
+      </div>
+      <a class="readmore" href="product.html"><span>阅读更多</span></a>
+    </li>
+    <li><img src="img/carou/iPad.png">
+      <div>
+        <h3>微软 surface3</h3>
+        <p>佳能数码单反相机，微型可换镜数码相机，带你引领摄影前沿。</p>
+      </div>
+      <a class="readmore" href="product.html"><span>阅读更多</span></a>
+    </li>
+  </ul>
+  <div class="left-btn" id="left">
+  </div>
+  <div class="right-btn" id="right">
+  </div>
+  <ol class="bottom-btn" id="bottom-btn">
+    <li class="active2"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ol>
+</div>
+<!--内容1-->
+<div style="clear:left"></div>
+<div class="content-back common">
+    <div class="content common">
+      <div class="main-content">
+        <img src="img/content/about-us.png">
+        <p>XXXX有限公司（Hanweb?Network?Co.?Ltd.）创立于1997年，专注于门户网站技术的研究和开发，以“门户网站内容管理系统”为核心产品，形成了针对政府、企业、媒体等<a href="">>></a></p>
+        <a class="more" href="about-us.html"><span>更多</span></a>
+      </div>
+      <div class="main-content">
+        <img src="img/content/news.png">
+        <ul>
+          <li><a href="">公司召开2016年半度年总结会及表彰大会</a></li>
+          <li><a href="">公司年度文化节在济南文化广场隆重举行</a></li>
+          <li><a href="">公司召开2016年半度年总结会</a></li>
+          <li><a href="">公司召开2016年半度年总结会及表彰大会</a></li>
+        </ul>
+        <a class="more" href="news.html"><span>更多</span></a>
+      </div>
+      <div class="main-content product">
+        <img src="img/content/product.png">
+        <p>1、2016年上半年度公司在计算机技术的研究上取得了卓越的成就，在长期以来困扰技术人员的问题上取得了突破。<br>2、IKEA是21世纪中少数几个令人炫目的商业奇迹之一。</p>
+        <a class="more" href="product.html"><span>更多</span></a>
+      </div>
+    </div>
+    <!--内容2-->
+    <div style="clear:both"></div>
+    <div class="content2 common">
+      <div class="main-content2">
+        <h3><a href="company-culture.html">公司文化</a></h3>
+        <p class="culture">企业文化：诚信、踏实、优质、一流。<br>经营理念：追求卓越无止境，与时俱进创未来。<br>价值观念：追求价值是我们工作的起点，创造价值是我们人生的动力。</p>
+      </div>
+      <div class="main-content2">
+        <h3><a href="news.html">公司博客</a></h3>
+        <ul class="blog">
+          <li><h3>2016-6-25</h3><p><a href="javascript:">微软在全球发布了新一代Windows10系统...</a></p></li>
+          <li><h3>2016-6-21</h3><p><a href="javascript:">国内百度无人汽车试验成功...</a></p></li>
+          <li><h3>2016-6-10</h3><p><a href="javascript:">虚拟现实产品代表的VR...</a></p></li>
+        </ul>
+      </div>
+      <div class="main-content2">
+        <h3><a href="news.html">公司新闻</a></h3>
+        <ul class="company-news">
+          <li><a href="javascript:"><p>万科争夺战的幕后<span>2016-06-25</span></p></a><a href="javascript:"><p>苹果            又陷“侵权门”事件<span>2016-06-25</span></p></a>
+          </li>
+          <li><a href="javascript:"><p>爱司凯业绩下降扔逆势扩产<span>2016-05-30</span></p></a><a href="javascript:"><p>沃尔玛出售一号店给京东<span>2016-05-30</span></p></a><a href="javascript:"><p>微软windows10发布最新新通知          <span>2016-05-30</span></p></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+<!--页脚-->
+<div class="foot common">
+  <div class="center-content">
+    <ul>
+  	  <li><a href="index.html">首页</a></li>
+      <li><a href="about us.html">关于我们</a></li>
+      <li><a href="product.html">产品介绍</a></li>
+      <li><a href="service.html">技术服务</a></li>
+      <li class="contact-us"><a href="contact-us.html">联系我们</a></li>
+    </ul>
+    <p>Copyright@Website Name.All Right Reserved</p>
+  </div>
+</div>
+</body>
+</html>

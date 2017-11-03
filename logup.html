@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link type="text/css" rel="stylesheet" href="style/popup.css">
+<script src="js/popup-check.js"></script>
+</head>
+
+<body style="background:#FFF">
+<!--注册页面-->
+<div class="pop-up">       
+        <ul class="log-style" id="log-style">
+          <li class="active3 ph-log">手机注册</li>
+          <li class="email-log">邮箱注册</li>
+        </ul>
+        <form action="" method="post" id="phone-form">
+          <input type="text" name="phone-number" placeholder="手机号码" id="phone-number">
+          <span id="phone-span"></span><br>
+          <input type="password" name="password" placeholder="密码（6-16位数字或字母区分大小写）" id="password">
+          <span id="psd-span"></span><br>
+          <input type="password" name="password" placeholder="请再次输入密码" id="password2">
+          <span id="psd2-span"></span><br>
+          <div class="code" id="check-code"></div>
+          <a href="javascript:" id="change" class="change">看不清换一张</a>
+          <input type="text" name="code" placeholder="请输入验证码" id="input-code">
+          <span id="code-span"></span><br>
+          <input class="submit" type="submit" value="确定">        
+        </form>
+        
+        <form class="email-form">
+          <input type="text" name="email-name" placeholder="邮箱" id="email-name">
+          <span id="email-span"></span><br>
+          <input type="password" name="password" placeholder="密码（6-16位数字或字母区分大小写）" id="email-password">
+          <span id="psd-span3"></span><br>
+          <input type="password" name="password" placeholder="请再次输入密码" id="email-password2">
+          <span id="psd2-span4"></span><br>
+          <input class="submit" type="submit" value="确定">         
+        </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+.news-content{
+	background:white;
+}
+.news-content h3{
+	height:60px;
+	line-height:60px;
+	font-size:24px;
+	margin-left:30px;	
+}
+.news-content ul{
+	padding:0 30px 50px 30px;	
+}
+.company-news a{
+	color:#333;
+	font-family:'微软雅黑';
+	font-size:16px;
+	line-height:30px;
+}
+
+.company-news a:visited{
+	color:red;	
+}
+.company-news a:hover{
+	color: rgba(255,0,0,1);
+	text-decoration:underline;	
+}
+.company-news a span{
+	float:right;	
+}
+.company-news li {
+	list-style-type: none;
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0;
+}
+.company-news li a {
+	font-size: 18px;
+	color: #333;
+}
+.company-news li p {
+	font-size: 16px;
+	color: #666;
+	margin-top: 10px;
+}
+
+
+
